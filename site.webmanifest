@@ -1,0 +1,11 @@
+{
+  "name": "Programa Jóvenes Médicos | Vithas Valencia 9 de Octubre",
+  "short_name": "Vithas Médicos",
+  "icons": [
+    { "src": "favicon_192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "favicon_512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#0a49b7",
+  "background_color": "#f5f8fd",
+  "display": "standalone"
+}
