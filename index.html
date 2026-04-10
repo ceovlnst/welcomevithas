@@ -6,11 +6,28 @@
   <title>Programa Jóvenes Médicos | Vithas Valencia 9 de Octubre</title>
   <meta name="description" content="Programa para médicos menores de 35 años en Hospital Vithas Valencia 9 de Octubre: primer año sin arrendamiento del espacio y apoyo fiscal y estratégico para iniciar actividad privada." />
   <meta name="theme-color" content="#0a49b7" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Programa Jóvenes Médicos | Vithas Valencia 9 de Octubre" />
+  <meta property="og:description" content="Primer año sin arrendamiento del espacio y apoyo fiscal y estratégico para iniciar actividad privada." />
+  <meta property="og:image" content="LogoVithas2.png" />
+  <meta property="og:image:alt" content="Logo Vithas" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Programa Jóvenes Médicos | Vithas Valencia 9 de Octubre" />
+  <meta name="twitter:description" content="Primer año sin arrendamiento del espacio y apoyo fiscal y estratégico para iniciar actividad privada." />
+  <meta name="twitter:image" content="LogoVithas2.png" />
 
-  <link rel="icon" href="favicon.ico" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_32.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_180.png" />
+  <link rel="icon" href="favicon.ico?v=1" sizes="any" />
+  <link rel="shortcut icon" href="favicon.ico?v=1" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon_48.png?v=1" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon_192.png?v=1" />
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon_512.png?v=1" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_16.png?v=1" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_32.png?v=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_180.png?v=1" />
+  <link rel="preload" as="image" href="LogoVithas2.png" />
+  <link rel="preload" as="image" href="Vithas.jpg" />
 
   <style>
     :root{
@@ -81,6 +98,8 @@
       border-radius:14px;
       box-shadow:0 10px 20px rgba(10,73,183,.14);
       background:#fff;
+      object-fit:contain;
+      padding:2px;
     }
 
     .brand-text{
@@ -285,6 +304,7 @@
     .panel.logo-panel .hospital-logo{
       width:min(440px, 100%);
       margin-bottom:18px;
+      object-fit:contain;
     }
 
     .panel.logo-panel p{
@@ -620,7 +640,7 @@
   <header class="topbar">
     <div class="container topbar-inner">
       <a class="brand" href="#inicio" aria-label="Inicio">
-        <img src="LogoVithas2.png" alt="Logo Vithas" />
+        <img src="LogoVithas2.png" alt="Logo Vithas" width="46" height="46" onerror="this.src='Vithas.jpg'" />
         <div class="brand-text">
           <strong>Vithas Valencia 9 de Octubre</strong>
           <span>Programa Jóvenes Médicos</span>
@@ -670,7 +690,7 @@
 
         <div class="hero-side">
           <div class="panel logo-panel">
-            <img class="hospital-logo" src="Vithas.jpg" alt="Vithas" />
+            <img class="hospital-logo" src="Vithas.jpg" alt="Vithas" onerror="this.src='LogoVithas2.png'" />
             <p>
               Una oportunidad para crecer en un entorno hospitalario reconocido, con imagen de marca, acompañamiento y visión a largo plazo.
             </p>
