@@ -270,10 +270,14 @@
 
     .metric strong{
       display:block;
-      font-size:1.75rem;
+      font-size:clamp(1.15rem, 1.6vw, 1.55rem);
       color:var(--vithas-blue);
       margin-bottom:6px;
-      letter-spacing:-.04em;
+      letter-spacing:-.03em;
+      line-height:1.15;
+      overflow-wrap:break-word;
+      word-break:normal;
+      hyphens:auto;
     }
 
     .metric span{
@@ -789,16 +793,16 @@
 
           <div class="microproof">
             <div class="metric">
-              <strong>Condiciones</strong>
-              <span>preferentes durante el primer año de colaboración</span>
+              <strong>Excelencia</strong>
+              <span>hospital de referencia en complejidad y volumen asistencial</span>
             </div>
             <div class="metric">
-              <strong>Acompañamiento</strong>
-              <span>fiscal, estratégico y clínico-organizativo integral</span>
+              <strong>Asesoría</strong>
+              <span>fiscal, estratégica y clínico-organizativa integral</span>
             </div>
             <div class="metric">
               <strong>Estructura</strong>
-              <span>orientada al desarrollo de consulta privada con respaldo institucional</span>
+              <span>marco institucional consolidado para el desarrollo de consulta privada</span>
             </div>
           </div>
         </div>
@@ -838,8 +842,8 @@
         <div class="values-grid">
           <article class="value-card">
             <div class="icon">01</div>
-            <h3>Condiciones preferentes</h3>
-            <p>El profesional desarrolla su actividad con menor presión económica y mayor capacidad para consolidar agenda y proyecto clínico.</p>
+            <h3>Modelo flexible de colaboración</h3>
+            <p>Modalidades de dedicación completa o parcial, adaptables a las distintas trayectorias profesionales y proyectos clínicos.</p>
           </article>
 
           <article class="value-card">
@@ -883,7 +887,7 @@
           <div class="program-card">
             <h3>Qué ofrece realmente</h3>
             <p>
-              Una propuesta integral: estructura institucional, condiciones preferentes, soporte experto y un contexto profesional óptimo para desarrollar la actividad con criterio y proyección.
+              Una propuesta integral: estructura institucional, soporte experto y un contexto profesional óptimo para desarrollar la actividad con criterio, rigor y proyección.
             </p>
           </div>
         </div>
@@ -893,9 +897,9 @@
             <div class="eyebrow">Ventaja diferencial</div>
             <h3>Desarrollar la actividad con criterio y respaldo</h3>
             <ul class="checklist">
-              <li><span class="check">✓</span><span>Menor exposición financiera durante el primer año.</span></li>
+              <li><span class="check">✓</span><span>Marco institucional sólido y de prestigio reconocido.</span></li>
               <li><span class="check">✓</span><span>Mayor claridad para estructurar la actividad clínica.</span></li>
-              <li><span class="check">✓</span><span>Posicionamiento óptimo desde el primer momento.</span></li>
+              <li><span class="check">✓</span><span>Posicionamiento óptimo en un entorno hospitalario de referencia.</span></li>
               <li><span class="check">✓</span><span>Un entorno que transmite confianza al paciente.</span></li>
             </ul>
           </div>
@@ -1032,9 +1036,9 @@
 
           <ul class="contact-list">
             <li>Hospital Vithas Valencia 9 de Octubre</li>
-            <li>Email: incorporaciones@vithas.es</li>
-            <li>Teléfono: +34 960 000 000</li>
-            <li>Valencia</li>
+            <li>Email: <a href="mailto:joanferras@vithas.es">joanferras@vithas.es</a></li>
+            <li>Teléfono: <a href="tel:+34678284847">+34 678 284 847</a></li>
+            <li>Calle Vall de la Ballestera 59, 46015 Valencia</li>
           </ul>
 
           <p class="note">
@@ -1095,7 +1099,7 @@
 
             <div class="form-actions">
               <button class="btn btn-primary" type="submit">Enviar solicitud</button>
-              <a class="btn btn-secondary" href="mailto:incorporaciones@vithas.es?subject=Solicitud%20de%20informaci%C3%B3n%20-%20Desarrollo%20profesional%20m%C3%A9dico">Escribir directamente por email</a>
+              <a class="btn btn-secondary" href="mailto:joanferras@vithas.es?subject=Solicitud%20de%20informaci%C3%B3n%20-%20Desarrollo%20profesional%20m%C3%A9dico">Escribir directamente por email</a>
             </div>
           </form>
         </div>
@@ -1131,7 +1135,7 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      const to = 'incorporaciones@vithas.es';
+      const to = 'joanferras@vithas.es';
       const nombre = document.getElementById('nombre').value.trim();
       const centro = document.getElementById('centro').value.trim();
       const email = document.getElementById('email').value.trim();
